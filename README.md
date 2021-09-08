@@ -1,7 +1,4 @@
-# pebble-stream-documentation
-Pebble Stream Documentation
-
-
+# Pebble Stream Documentation
 
 Directives are either [transformative](#transformative-directives) (`pebblestream:from(Sheet1)`) or [annotative](#annotative-directives) (`pebblestream:sorted:asc`).
 
