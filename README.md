@@ -1,4 +1,4 @@
-#Pebble Stream Documentation
+# Pebble Stream Documentation
 
 Directives are either [transformative](#transformative-directives) (`pebblestream:from(Sheet1)`) or [annotative](#annotative-directives) (`pebblestream:sorted:asc`).
 
@@ -13,10 +13,10 @@ and go in a comment in the top-left cell of a sheet.
 
 <details>
   <summary>Multi-directive example</summary>
-  
-  <a href="https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Multi-directive%20example.xlsx">Multi-directive example.xlsx</a>
-  ```
-Purchases           
+
+
+```
+Purchases
 From To Amount Verified
 0    1  30     TRUE
 5    1  10     FALSE
@@ -37,7 +37,7 @@ pebblestream:group-sum("To", "Amount")
 To Amount
 1  70
 2  80
-  ```
+```
 </details>
 
 The directives are executed in this order:  
