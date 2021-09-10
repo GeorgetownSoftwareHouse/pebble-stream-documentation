@@ -17,7 +17,7 @@ and go in a comment in the top-left cell of a sheet.
 <details>
   <summary>Multi-directive example</summary>
   
-  [Multi-directive example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Multi-directive%20example.xlsx)
+  <a href="https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Multi-directive%20example.xlsx">Multi-directive example.xlsx</a>
   ```
 Purchases           
 From To Amount Verified
