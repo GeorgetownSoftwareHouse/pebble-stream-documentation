@@ -1,4 +1,7 @@
-# Pebble Stream Documentation
+# pebble-stream-documentation
+Pebble Stream Documentation
+
+
 
 Directives are either [transformative](#transformative-directives) (`pebblestream:from(Sheet1)`) or [annotative](#annotative-directives) (`pebblestream:sorted:asc`).
 
@@ -14,7 +17,7 @@ and go in a comment in the top-left cell of a sheet.
 <details>
   <summary>Multi-directive example</summary>
   
-  [Multi-directive example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Multi-directive%20example.xlsx)
+  [Multi-directive example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Multi-directive%20example.xlsx)
   ```
 Purchases           
 From To Amount Verified
@@ -69,7 +72,7 @@ Stitches the sheets together (headers only appear once). Only the columns with h
 <details>
   <summary>Example</summary>
   
-  [From example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/From%20example.xlsx)
+  [From example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/From%20example.xlsx)
   ```
 Regional
 Name ID Account
@@ -106,7 +109,7 @@ Output will have a row for every combination of rows in the input sheets.
 <details>
   <summary>Example</summary>
   
-  [Cartesian-product example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Cartesian-product%20example.xlsx)
+  [Cartesian-product example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Cartesian-product%20example.xlsx)
   ```
 Customers
 Customer ID Balance
@@ -140,7 +143,7 @@ Does an inner join with SheetRight keyed on either the header names they have in
 <details>
   <summary>Example 1</summary>
   
-  [Join example 1.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Join%20example%201.xlsx)
+  [Join example 1.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Join%20example%201.xlsx)
   ```
 Customers
 Customer ID Name
@@ -168,7 +171,7 @@ Alex  2           2        8
 <details>
   <summary>Example 2</summary>
   
-  [Join example 2.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Join%20example%202.xlsx)
+  [Join example 2.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Join%20example%202.xlsx)
   ```
 Transfers
 From To Amount
@@ -205,7 +208,7 @@ Does a left outer join with SheetRight keyed on either the header names they hav
 <details>
   <summary>Example 1</summary>
   
-  [Outer-join example 1.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Outer-join%20example%201.xlsx)
+  [Outer-join example 1.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Outer-join%20example%201.xlsx)
   ```
 Customers
 Customer ID Name
@@ -236,7 +239,7 @@ Linda 3
 <details>
   <summary>Example 2</summary>
   
-  [Outer-join example 2.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Outer-join%20example%202.xlsx)
+  [Outer-join example 2.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Outer-join%20example%202.xlsx)
   ```
 Transfers
 From To Amount
@@ -281,7 +284,7 @@ If `filter()` appears multiple times, it includes rows where any of the `filter(
 <details>
   <summary>Simple example</summary>
   
-  [Filter simple example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Filter%20simple%20example.xlsx)
+  [Filter simple example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Filter%20simple%20example.xlsx)
   ```
 Accounts
 ID Verified Balance
@@ -302,7 +305,7 @@ ID
 <details>
   <summary>Complex example</summary>
   
-  [Filter complex example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Filter%20complex%20example.xlsx)
+  [Filter complex example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Filter%20complex%20example.xlsx)
   ```
   Heights
 Height Age Age last transaction
@@ -336,7 +339,7 @@ Can't be used with group.
 <details>
   <summary>Simple example</summary>
   
-  [Sort simple example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Sort%20simple%20example.xlsx)
+  [Sort simple example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Sort%20simple%20example.xlsx)
   ```
 Accounts
 ID Balance
@@ -358,7 +361,7 @@ ID Balance
 <details>
   <summary>Complex example</summary>
   
-  [Sort complex example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Sort%20complex%20example.xlsx)
+  [Sort complex example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Sort%20complex%20example.xlsx)
   ```
 Transactions
 First Last      Date
@@ -393,7 +396,7 @@ Can't be used with sort, group-unique, group-sum, or group-ratio.
 <details>
   <summary>Multi-directive example</summary>
   
-  [Group multi-directive example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Group%20multi-directive%20example.xlsx)
+  [Group multi-directive example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Group%20multi-directive%20example.xlsx)
   ```
 Transactions
 Account ID Account User # Amount Coupon factor IP Address  Tags
@@ -420,7 +423,7 @@ Account ID Account User # Amount Coupon factor Same IP? Verified?
 <details>
   <summary>Solo example</summary>
   
-  [Group solo example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Group%20solo%20example.xlsx)
+  [Group solo example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Group%20solo%20example.xlsx)
   ```
 Logins
 Account ID Account User # Date
@@ -470,7 +473,7 @@ Requires [group](#group).
 <details>
   <summary>Example</summary>
   
-  [Sum example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Sum%20example.xlsx)
+  [Sum example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Sum%20example.xlsx)
   ```
 Transactions
 First Last      Transfer
@@ -501,7 +504,7 @@ Requires [group](#group).
 <details>
   <summary>Example</summary>
   
-  [Mult example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Mult%20example.xlsx)
+  [Mult example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Mult%20example.xlsx)
   ```
 Discounts
 Discount ID Account ID Discount
@@ -529,7 +532,7 @@ Requires [group](#group).
 <details>
   <summary>Example</summary>
   
-  [Equal example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Equal%20example.xlsx)
+  [Equal example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Equal%20example.xlsx)
   ```
 Logins
 Account ID Account User # IP Address
@@ -561,7 +564,7 @@ Incompatible with [coalesce](#coalesce).
 <details>
   <summary>Example</summary>
   
-  [Ratio example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Ratio%20example.xlsx)
+  [Ratio example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Ratio%20example.xlsx)
   ```
 Transactions
 First Last      Value
@@ -595,7 +598,7 @@ Requires [group](#group).
 <details>
   <summary>Example</summary>
   
-  [Regex example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Regex%20example.xlsx)
+  [Regex example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Regex%20example.xlsx)
   ```
 Transactions
 Account ID Account User # Amount Tags
@@ -627,7 +630,7 @@ Can't be used with group, group-sum, or group-ratio.
 <details>
   <summary>Example</summary>
   
-  [Group-unique example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Group-unique%20example.xlsx)
+  [Group-unique example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Group-unique%20example.xlsx)
   ```
 Transactions
 First Last      Date
@@ -656,7 +659,7 @@ Can't be used with group, group-unique, or group-ratio.
 <details>
   <summary>Example</summary>
   
-  [Group-sum example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Group-sum%20example.xlsx)
+  [Group-sum example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Group-sum%20example.xlsx)
   ```
 Transactions
 First Last      Transfer
@@ -685,7 +688,7 @@ Can't be used with group, group-unique, or group-sum.
 <details>
   <summary>Example</summary>
   
-  [Group-ratio example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Group-ratio%20example.xlsx)
+  [Group-ratio example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Group-ratio%20example.xlsx)
   ```
 Deposits
 First Last      Deposit
@@ -715,7 +718,7 @@ _O(cells)_
 <details>
   <summary>Example</summary>
   
-  [Header-map example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Header-map%20example.xlsx)
+  [Header-map example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Header-map%20example.xlsx)
   ```
 Raw Accounts
 ID Balance Last Name
@@ -743,7 +746,7 @@ SheetSplit in the output will be a list of sheets where each has a group of rows
 <details>
   <summary>Example</summary>
   
-  [Split example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Split%20example.xlsx)
+  [Split example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Split%20example.xlsx)
   ```
 Transactions
 First Last      Date
@@ -805,109 +808,110 @@ Annotative directives look like `pebblestream:sorted:asc` or `pebblestream:id` a
 ## allowed-values
 `pebblestream:allowed-values[:value]+`  
 An error will be thrown if this column has a value besides those listed. If `value` is a string, it should be written between `"`'s. For blank, put `blank`.  
-[Allowed-values example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Allowed-values%20example.xlsx)  
+[Allowed-values example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Allowed-values%20example.xlsx)  
 _O(rows)_
 
 ## div/0
 `pebblestream:div/0:(spreadsheet|worksheet|column)[:42]`  
 Whenever a #DIV/0! would happen, 0 is returned. `spreadsheet`, `worksheet`, and `column` apply only to the spreadsheet, worksheet, or column in which they are present. If `:<number>` is provided at the end, that number is returned instead of 0.  
-[Div/0 example 1.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Div0%20example%201.xlsx)  
-[Div/0 example 2.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Div0%20example%202.xlsx)  
+[Div/0 example 1.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Div0%20example%201.xlsx)  
+[Div/0 example 2.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Div0%20example%202.xlsx)  
 _O(1)_
 
 ## do-not-compile
 `pebblestream:do-not-compile`  
 This spreadsheet will not exist to the compiler. Any sheet referencing it will cause a compile error.  
-[Do-not-compile example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Do-not-compile%20example.xlsx)  
+[Do-not-compile example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Do-not-compile%20example.xlsx)  
 _O(1)_
 
 ## fail
 `pebblestream:fail`  
 If any value in this column is TRUE, the runtime will throw an exception.  
-[Fail example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Fail%20example.xlsx)  
+[Fail example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Fail%20example.xlsx)  
 _O(1)_
 
 ## grouped
 `pebblestream:grouped`  
 If any value in this column appears multiple times but not next to each other, the runtime will throw an exception.  
-[Grouped example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Grouped%20example.xlsx)  
+[Grouped example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Grouped%20example.xlsx)  
 _O(rows)_
 
 ## header-count
 `pebblestream:header-count:2`  
 Treats this sheet as having 2 header rows.  
-[Header-count example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Header-count%20example.xlsx)  
+[Header-count example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Header-count%20example.xlsx)  
 _O(1)_
 
 ## hint
 `pebblestream:hint:key[:value]`  
 Stores a map of Sheet name -> `key` -> list of values for each hint directive found in the sheet. If `value` isn't specified, uses `nil`.  
-[Hint example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Hint%20example.xlsx)  
+[Hint example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Hint%20example.xlsx)  
 _O(1)_
 
 ## id
 `pebblestream:id[:name]`  
 Every row has to be unique when looking at the cells in columns with `id` and the same `name` (where no `name` is also a name).  
-[ID example 1.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/ID%20example%201.xlsx)  
-[ID example 2.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/ID%20example%202.xlsx)  
+[ID example 1.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/ID%20example%201.xlsx)  
+[ID example 2.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/ID%20example%202.xlsx)  
 _O(rows)_
 
 ## identical-columns
 `pebblestream:identical-columns:Sheet1[: ...]`  
 Every column in `Sheet1 ...` with the same header name as this one must have the same values as this one.  
-[Identical-columns example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Identical-columns%20example.xlsx)  
+[Identical-columns example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Identical-columns%20example.xlsx)  
 _O(rows)_
 
 ## ignore
 `pebblestream:ignore`  
 This sheet won't be generated by the runtime. Can only be used on isolated worksheets.  
-[Hint example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Hint%20example.xlsx)  
+[Hint example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Hint%20example.xlsx)  
 _O(1)_
 
 ## match-rows
 `pebblestream:match-rows:Sheet1`  
 This sheet's last row will be dragged down by the runtime to match the number of rows in `Sheet1`.  
-[Match-rows example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Match-rows%20example.xlsx)  
+[Match-rows example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Match-rows%20example.xlsx)  
 _O(rows_matching)_
 
 ## not-blank
 `pebblestream:not-blank`  
 The runtime will throw an exception if any value in this column is blank.  
-[Not-blank example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Not-blank%20example.xlsx)  
+[Not-blank example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Not-blank%20example.xlsx)  
 _O(rows)_
 
 ## out
 `pebblestream:out`  
 This sheet will be included in the output sheets when run by the runtime instead of whatever would have been output by default.  
-[Out example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Out%20example.xlsx)  
+[Out example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Out%20example.xlsx)  
 _O(1)_
 
 ## sorted
 `pebblestream:sorted[:(asc|desc)][:<number>]`  
 The runtime will throw an exception if this column is not sorted, ascending by default. If multiple are placed in the same sheet, the columns will be considered multiple keys for the same sorted check, and they should each have a number to indicate their order for breaking ties (lower = earlier).  
-[Sorted example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Sorted%20example.xlsx)  
+[Sorted example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Sorted%20example.xlsx)  
 _O(rows)_
 
 ## stop
 `pebblestream:stop`  
 The runtime will drag down this worksheet row by row until a cell in this column is `TRUE`.  
-[Stop example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Stop%20example.xlsx)  
+[Stop example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Stop%20example.xlsx)  
 _O(rows_until_stop)_
 
 ## stop-immediate
 `pebblestream:stop-immediate`  
 Same as `pebblestream:stop`, except when this column is `TRUE`, the rest of the row to the right is not completed.  
-[Stop-immediate example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Stop-immediate%20example.xlsx)  
+[Stop-immediate example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Stop-immediate%20example.xlsx)  
 _O(rows_until_stop)_
 
 ## unique
 `pebblestream:unique`  
 Every row must have a unique value.  
-[Unique example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Unique%20example.xlsx)  
+[Unique example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Unique%20example.xlsx)  
 _O(rows)_
 
 ## warn
 `pebblestream:warn`  
 When this column is `TRUE`, its address will be included in a `:warnings` entry of the runtime's returned output context.  
-[Warn example.xlsx](https://github.com/GeorgetownSoftwareHouse/gridster-tooling/raw/master/dev-resources/Warn%20example.xlsx)  
+[Warn example.xlsx](https://github.com/GeorgetownSoftwareHouse/pebble-stream-documentation/raw/main/examples/Warn%20example.xlsx)  
 _O(1)_
+    
